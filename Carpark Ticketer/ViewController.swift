@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         onDatesChanged()
      
     }
+    @IBOutlet weak var RateLabel: UILabel!
 
     @IBAction func EndDateEntered(_ sender: UIDatePicker) {
         onDatesChanged()
@@ -31,8 +32,10 @@ class ViewController: UIViewController {
         
 
         
-        PriceLabel.text = RateSelectingCalculator.sharedInstance.priceText(from: startDate, to: endDate)
+       let priceAndRateText = RateSelectingCalculator.sharedInstance.priceAndRateText(from: startDate, to: endDate)
         
+        PriceLabel.text = priceAndRateText.0
+        RateLabel.text = priceAndRateText.1
         
     }
     override func viewDidLoad() {

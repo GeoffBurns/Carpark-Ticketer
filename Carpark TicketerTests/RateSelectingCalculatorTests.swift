@@ -37,9 +37,12 @@ class RateSelectingCalculatorTests: XCTestCase {
         
         if let evening = evening,  let morning = morning
         {
-            if let price = calculator.price(from:morning, to:evening)
+            if let priceAndRate = calculator.priceAndRate(from:morning, to:evening)
             {
-                XCTAssert(price == 13.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 13.00, "Price = " + String(priceAndRate.0))
+                
+                XCTAssert(priceAndRate.1 == "Early Bird", "Rate = " + priceAndRate.1)
+                
             }
             else
             {
@@ -62,10 +65,10 @@ class RateSelectingCalculatorTests: XCTestCase {
             var morning = evening.followingDay
             morning.setTime(to: "6:00 AM")
             
-            
-            if let price = calculator.price(from:evening, to:morning)
+            if let priceAndRate = calculator.priceAndRate(from:evening, to:morning)
             {
-                XCTAssert(price == 6.50, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 6.50, "Price = " + String(priceAndRate.0))
+                XCTAssert(priceAndRate.1 == "Night", "Rate = " + priceAndRate.1)
             }
             else
             {
@@ -87,11 +90,13 @@ class RateSelectingCalculatorTests: XCTestCase {
             var morning = evening.followingDay
             morning.setTime(to: "9:00 AM")
             
-            
-            if let price = calculator.price(from:evening, to:morning)
+        
+            if let priceAndRate = calculator.priceAndRate(from:evening, to:morning)
             {
-                XCTAssert(price == 10.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 10.00, "Price = " + String(priceAndRate.0))
+                XCTAssert(priceAndRate.1 == "Weekend", "Rate = " + priceAndRate.1)
             }
+                
             else
             {
                 XCTFail()
@@ -113,9 +118,12 @@ class RateSelectingCalculatorTests: XCTestCase {
         
         if let evening = evening,  let morning = morning
         {
-            if let price = calculator.price(from:morning, to:evening)
+      
+            if let priceAndRate = calculator.priceAndRate(from:morning, to:evening)
             {
-                XCTAssert(price == 5.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 5.00, "Price = " + String(priceAndRate.0))
+                
+                XCTAssert(priceAndRate.1 == "Standard", "Rate = " + priceAndRate.1)
             }
             else
             {
@@ -137,9 +145,11 @@ class RateSelectingCalculatorTests: XCTestCase {
         
         if let evening = evening,  let morning = morning
         {
-            if let price = calculator.price(from:morning, to:evening)
+            if let priceAndRate = calculator.priceAndRate(from:morning, to:evening)
             {
-                XCTAssert(price == 10.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 10.00, "Price = " + String(priceAndRate.0))
+                
+                XCTAssert(priceAndRate.1 == "Standard", "Rate = " + priceAndRate.1)
             }
             else
             {
@@ -161,9 +171,11 @@ class RateSelectingCalculatorTests: XCTestCase {
         
         if let evening = evening,  let morning = morning
         {
-            if let price = calculator.price(from:morning, to:evening)
+            if let priceAndRate = calculator.priceAndRate(from:morning, to:evening)
             {
-                XCTAssert(price == 15.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 15.00, "Price = " + String(priceAndRate.0))
+                
+                XCTAssert(priceAndRate.1 == "Standard", "Rate = " + priceAndRate.1)
             }
             else
             {
@@ -185,9 +197,11 @@ class RateSelectingCalculatorTests: XCTestCase {
             
             
             
-            if let price = calculator.price(from:evening, to:morning)
+            if let priceAndRate = calculator.priceAndRate(from:evening, to:morning)
             {
-                XCTAssert(price == 40.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 40.00, "Price = " + String(priceAndRate.0))
+                
+                XCTAssert(priceAndRate.1 == "Standard", "Rate = " + priceAndRate.1)
             }
             else
             {
@@ -209,10 +223,11 @@ class RateSelectingCalculatorTests: XCTestCase {
             let morning = evening.followingDay.followingDay
             
             
-            
-            if let price = calculator.price(from:evening, to:morning)
+            if let priceAndRate = calculator.priceAndRate(from:evening, to:morning)
             {
-                XCTAssert(price == 60.00, "Price = " + String(price))
+                XCTAssert(priceAndRate.0 == 60.00, "Price = " + String(priceAndRate.0))
+                
+                XCTAssert(priceAndRate.1 == "Standard", "Rate = " + priceAndRate.1)
             }
             else
             {

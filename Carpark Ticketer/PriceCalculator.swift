@@ -15,6 +15,8 @@ public protocol PriceCalculatorStrategy
     // normally using Floats for currency is a no-no but there isn't much currency arithmatic or comparsion in this project to cause problems 
     // if this project's scope is expanded it might be worthwhile creating a money class
     func price(from start: Date, to end: Date) -> Double?
+    
+     func priceAndRate(from start: Date, to end: Date) -> (Double,String)?
 }
 
 // Chain of Responsibility Pattern
@@ -44,6 +46,18 @@ open class RateSelectingCalculator
         }
         return nil
     }
+    public func priceAndRate(from start: Date, to end: Date) -> (Double,String)? {
+        
+        for calculator in calculators
+        {
+            if let priceAndRate = calculator.priceAndRate(from:start, to:end)
+            {
+                return priceAndRate
+            }
+            
+        }
+        return nil
+    }
     public func priceText(from start: Date, to end: Date) -> String {
         
         if start > end
@@ -61,7 +75,24 @@ open class RateSelectingCalculator
         
         return "Error"
     }
-    
+    public func priceAndRateText(from start: Date, to end: Date) -> (String,String) {
+        
+        if start > end
+        {
+            return ("Start Date is After End Date","")
+        }
+        if let priceAndRate = self.priceAndRate(from: start, to: end)
+        {
+            let price = priceAndRate.0 as NSNumber
+            let rate = priceAndRate.1
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            
+            return (formatter.string(from: price) ?? "Error",rate)
+        }
+        
+        return  ("Error","")
+    }
 }
 
 // Strategy Pattern (Concrete Strategy)
@@ -86,6 +117,13 @@ open class EarlyBirdCalculator : PriceCalculatorStrategy
     }
     
     return nil
+    }
+    
+    public func priceAndRate(from start: Date, to end: Date) ->  (Double,String)?
+    {
+        if let price = self.price(from: start, to: end) { return (price,"Early Bird") }
+        
+        return nil
     }
 }
 // Strategy Pattern (Concrete Strategy)
@@ -114,6 +152,13 @@ open class NightRateCalculator : PriceCalculatorStrategy
             
             return nil
         }
+    public func priceAndRate(from start: Date, to end: Date) ->  (Double,String)?
+    {
+        if let price = self.price(from: start, to: end) { return (price,"Night") }
+        
+        return nil
+    }
+
 }
 // Strategy Pattern (Concrete Strategy)
 // Price Calculator for the Weekend Rate
@@ -137,7 +182,15 @@ open class WeekendRateCalculator : PriceCalculatorStrategy
             return 10.00
           
         }
+    public func priceAndRate(from start: Date, to end: Date) ->  (Double,String)?
+    {
+        if let price = self.price(from: start, to: end) { return (price,"Weekend") }
+        
+        return nil
+    }
+ 
 }
+
 // Strategy Pattern (Concrete Strategy)
 // Price Calculator for the Hourly Rate
 open class HourlyRateCalculator : PriceCalculatorStrategy
@@ -162,7 +215,16 @@ open class HourlyRateCalculator : PriceCalculatorStrategy
                 return 20.00
                 
             }
-        }
+    public func priceAndRate(from start: Date, to end: Date) ->  (Double,String)?
+    {
+        if let price = self.price(from: start, to: end) { return (price,"Standard") }
+        
+        return nil
+    }
+    
+
+}
+
 // Strategy Pattern (Concrete Strategy)
 // Price Calculator for the Daily Rate
 open class DailyRateCalculator : PriceCalculatorStrategy
@@ -183,6 +245,13 @@ open class DailyRateCalculator : PriceCalculatorStrategy
                 return 20.00 * Double(noOfDays)
 
             }
+    public func priceAndRate(from start: Date, to end: Date) ->  (Double,String)?
+    {
+        if let price = self.price(from: start, to: end) { return (price,"Standard") }
+        
+        return nil
+    }
+    
 }
 
 
