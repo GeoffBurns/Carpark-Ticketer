@@ -12,7 +12,6 @@
 		ACEEADA11EF8B4FF00D9E709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEAD9F1EF8B4FF00D9E709 /* Main.storyboard */; };
 		ACEEADA31EF8B4FF00D9E709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEEADA21EF8B4FF00D9E709 /* Assets.xcassets */; };
 		ACEEADA61EF8B4FF00D9E709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEADA41EF8B4FF00D9E709 /* LaunchScreen.storyboard */; };
-		ACEEADBC1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */; };
 		ACEEADCA1EF8CD1200D9E709 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADC91EF8CD1200D9E709 /* PriceCalculator.swift */; };
 		ACEEADCC1EF8E76B00D9E709 /* DateExtentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADCB1EF8E76B00D9E709 /* DateExtentionTests.swift */; };
 		ACEEADCE1EF8F4B500D9E709 /* EarlyBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADCD1EF8F4B500D9E709 /* EarlyBirdTests.swift */; };
@@ -52,8 +51,6 @@
 		ACEEADAC1EF8B4FF00D9E709 /* Carpark TicketerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carpark TicketerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEEADB21EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEEADB71EF8B4FF00D9E709 /* Carpark TicketerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carpark TicketerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpark_TicketerUITests.swift; sourceTree = "<group>"; };
-		ACEEADBD1EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEEADC91EF8CD1200D9E709 /* PriceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		ACEEADCB1EF8E76B00D9E709 /* DateExtentionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtentionTests.swift; sourceTree = "<group>"; };
 		ACEEADCD1EF8F4B500D9E709 /* EarlyBirdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarlyBirdTests.swift; sourceTree = "<group>"; };
@@ -95,7 +92,6 @@
 			children = (
 				ACEEAD9A1EF8B4FF00D9E709 /* Carpark Ticketer */,
 				ACEEADAF1EF8B4FF00D9E709 /* Carpark TicketerTests */,
-				ACEEADBA1EF8B4FF00D9E709 /* Carpark TicketerUITests */,
 				ACEEAD991EF8B4FF00D9E709 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,15 +134,6 @@
 				ACEEADD91EF934CC00D9E709 /* DailyRateCalculatorTests.swift */,
 			);
 			path = "Carpark TicketerTests";
-			sourceTree = "<group>";
-		};
-		ACEEADBA1EF8B4FF00D9E709 /* Carpark TicketerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */,
-				ACEEADBD1EF8B4FF00D9E709 /* Info.plist */,
-			);
-			path = "Carpark TicketerUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEEADBC1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
