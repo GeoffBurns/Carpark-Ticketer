@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACEEAD9C1EF8B4FF00D9E709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEAD9B1EF8B4FF00D9E709 /* AppDelegate.swift */; };
+		ACEEAD9E1EF8B4FF00D9E709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEAD9D1EF8B4FF00D9E709 /* ViewController.swift */; };
+		ACEEADA11EF8B4FF00D9E709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEAD9F1EF8B4FF00D9E709 /* Main.storyboard */; };
+		ACEEADA31EF8B4FF00D9E709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEEADA21EF8B4FF00D9E709 /* Assets.xcassets */; };
+		ACEEADA61EF8B4FF00D9E709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEADA41EF8B4FF00D9E709 /* LaunchScreen.storyboard */; };
+		ACEEADB11EF8B4FF00D9E709 /* Carpark_TicketerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADB01EF8B4FF00D9E709 /* Carpark_TicketerTests.swift */; };
+		ACEEADBC1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACEEADAD1EF8B4FF00D9E709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACEEAD901EF8B4FF00D9E709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACEEAD971EF8B4FF00D9E709;
+			remoteInfo = "Carpark Ticketer";
+		};
+		ACEEADB81EF8B4FF00D9E709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACEEAD901EF8B4FF00D9E709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACEEAD971EF8B4FF00D9E709;
+			remoteInfo = "Carpark Ticketer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACEEAD981EF8B4FF00D9E709 /* Carpark Ticketer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carpark Ticketer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEEAD9B1EF8B4FF00D9E709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACEEAD9D1EF8B4FF00D9E709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACEEADA01EF8B4FF00D9E709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACEEADA21EF8B4FF00D9E709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACEEADA51EF8B4FF00D9E709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACEEADA71EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEEADAC1EF8B4FF00D9E709 /* Carpark TicketerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carpark TicketerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEEADB01EF8B4FF00D9E709 /* Carpark_TicketerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpark_TicketerTests.swift; sourceTree = "<group>"; };
+		ACEEADB21EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEEADB71EF8B4FF00D9E709 /* Carpark TicketerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carpark TicketerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpark_TicketerUITests.swift; sourceTree = "<group>"; };
+		ACEEADBD1EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACEEAD951EF8B4FF00D9E709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEADA91EF8B4FF00D9E709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEADB41EF8B4FF00D9E709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACEEAD8F1EF8B4FF00D9E709 = {
+			isa = PBXGroup;
+			children = (
+				ACEEAD9A1EF8B4FF00D9E709 /* Carpark Ticketer */,
+				ACEEADAF1EF8B4FF00D9E709 /* Carpark TicketerTests */,
+				ACEEADBA1EF8B4FF00D9E709 /* Carpark TicketerUITests */,
+				ACEEAD991EF8B4FF00D9E709 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACEEAD991EF8B4FF00D9E709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACEEAD981EF8B4FF00D9E709 /* Carpark Ticketer.app */,
+				ACEEADAC1EF8B4FF00D9E709 /* Carpark TicketerTests.xctest */,
+				ACEEADB71EF8B4FF00D9E709 /* Carpark TicketerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACEEAD9A1EF8B4FF00D9E709 /* Carpark Ticketer */ = {
+			isa = PBXGroup;
+			children = (
+				ACEEAD9B1EF8B4FF00D9E709 /* AppDelegate.swift */,
+				ACEEAD9D1EF8B4FF00D9E709 /* ViewController.swift */,
+				ACEEAD9F1EF8B4FF00D9E709 /* Main.storyboard */,
+				ACEEADA21EF8B4FF00D9E709 /* Assets.xcassets */,
+				ACEEADA41EF8B4FF00D9E709 /* LaunchScreen.storyboard */,
+				ACEEADA71EF8B4FF00D9E709 /* Info.plist */,
+			);
+			path = "Carpark Ticketer";
+			sourceTree = "<group>";
+		};
+		ACEEADAF1EF8B4FF00D9E709 /* Carpark TicketerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACEEADB01EF8B4FF00D9E709 /* Carpark_TicketerTests.swift */,
+				ACEEADB21EF8B4FF00D9E709 /* Info.plist */,
+			);
+			path = "Carpark TicketerTests";
+			sourceTree = "<group>";
+		};
+		ACEEADBA1EF8B4FF00D9E709 /* Carpark TicketerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */,
+				ACEEADBD1EF8B4FF00D9E709 /* Info.plist */,
+			);
+			path = "Carpark TicketerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACEEAD971EF8B4FF00D9E709 /* Carpark Ticketer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEEADC01EF8B4FF00D9E709 /* Build configuration list for PBXNativeTarget "Carpark Ticketer" */;
+			buildPhases = (
+				ACEEAD941EF8B4FF00D9E709 /* Sources */,
+				ACEEAD951EF8B4FF00D9E709 /* Frameworks */,
+				ACEEAD961EF8B4FF00D9E709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carpark Ticketer";
+			productName = "Carpark Ticketer";
+			productReference = ACEEAD981EF8B4FF00D9E709 /* Carpark Ticketer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACEEADAB1EF8B4FF00D9E709 /* Carpark TicketerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEEADC31EF8B4FF00D9E709 /* Build configuration list for PBXNativeTarget "Carpark TicketerTests" */;
+			buildPhases = (
+				ACEEADA81EF8B4FF00D9E709 /* Sources */,
+				ACEEADA91EF8B4FF00D9E709 /* Frameworks */,
+				ACEEADAA1EF8B4FF00D9E709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACEEADAE1EF8B4FF00D9E709 /* PBXTargetDependency */,
+			);
+			name = "Carpark TicketerTests";
+			productName = "Carpark TicketerTests";
+			productReference = ACEEADAC1EF8B4FF00D9E709 /* Carpark TicketerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACEEADB61EF8B4FF00D9E709 /* Carpark TicketerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEEADC61EF8B4FF00D9E709 /* Build configuration list for PBXNativeTarget "Carpark TicketerUITests" */;
+			buildPhases = (
+				ACEEADB31EF8B4FF00D9E709 /* Sources */,
+				ACEEADB41EF8B4FF00D9E709 /* Frameworks */,
+				ACEEADB51EF8B4FF00D9E709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACEEADB91EF8B4FF00D9E709 /* PBXTargetDependency */,
+			);
+			name = "Carpark TicketerUITests";
+			productName = "Carpark TicketerUITests";
+			productReference = ACEEADB71EF8B4FF00D9E709 /* Carpark TicketerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACEEAD901EF8B4FF00D9E709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Geoff Burns";
+				TargetAttributes = {
+					ACEEAD971EF8B4FF00D9E709 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5CUBLSA9G4;
+						ProvisioningStyle = Automatic;
+					};
+					ACEEADAB1EF8B4FF00D9E709 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5CUBLSA9G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACEEAD971EF8B4FF00D9E709;
+					};
+					ACEEADB61EF8B4FF00D9E709 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5CUBLSA9G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACEEAD971EF8B4FF00D9E709;
+					};
+				};
+			};
+			buildConfigurationList = ACEEAD931EF8B4FF00D9E709 /* Build configuration list for PBXProject "Carpark Ticketer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACEEAD8F1EF8B4FF00D9E709;
+			productRefGroup = ACEEAD991EF8B4FF00D9E709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACEEAD971EF8B4FF00D9E709 /* Carpark Ticketer */,
+				ACEEADAB1EF8B4FF00D9E709 /* Carpark TicketerTests */,
+				ACEEADB61EF8B4FF00D9E709 /* Carpark TicketerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACEEAD961EF8B4FF00D9E709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEEADA61EF8B4FF00D9E709 /* LaunchScreen.storyboard in Resources */,
+				ACEEADA31EF8B4FF00D9E709 /* Assets.xcassets in Resources */,
+				ACEEADA11EF8B4FF00D9E709 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEADAA1EF8B4FF00D9E709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEADB51EF8B4FF00D9E709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACEEAD941EF8B4FF00D9E709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEEAD9E1EF8B4FF00D9E709 /* ViewController.swift in Sources */,
+				ACEEAD9C1EF8B4FF00D9E709 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEADA81EF8B4FF00D9E709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEEADB11EF8B4FF00D9E709 /* Carpark_TicketerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACEEADB31EF8B4FF00D9E709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEEADBC1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACEEADAE1EF8B4FF00D9E709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACEEAD971EF8B4FF00D9E709 /* Carpark Ticketer */;
+			targetProxy = ACEEADAD1EF8B4FF00D9E709 /* PBXContainerItemProxy */;
+		};
+		ACEEADB91EF8B4FF00D9E709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACEEAD971EF8B4FF00D9E709 /* Carpark Ticketer */;
+			targetProxy = ACEEADB81EF8B4FF00D9E709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACEEAD9F1EF8B4FF00D9E709 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACEEADA01EF8B4FF00D9E709 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACEEADA41EF8B4FF00D9E709 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACEEADA51EF8B4FF00D9E709 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACEEADBE1EF8B4FF00D9E709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACEEADBF1EF8B4FF00D9E709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACEEADC11EF8B4FF00D9E709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5CUBLSA9G4;
+				INFOPLIST_FILE = "Carpark Ticketer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeoffBurns.Carpark-Ticketer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACEEADC21EF8B4FF00D9E709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5CUBLSA9G4;
+				INFOPLIST_FILE = "Carpark Ticketer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeoffBurns.Carpark-Ticketer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ACEEADC41EF8B4FF00D9E709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5CUBLSA9G4;
+				INFOPLIST_FILE = "Carpark TicketerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeoffBurns.Carpark-TicketerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carpark Ticketer.app/Carpark Ticketer";
+			};
+			name = Debug;
+		};
+		ACEEADC51EF8B4FF00D9E709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5CUBLSA9G4;
+				INFOPLIST_FILE = "Carpark TicketerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeoffBurns.Carpark-TicketerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carpark Ticketer.app/Carpark Ticketer";
+			};
+			name = Release;
+		};
+		ACEEADC71EF8B4FF00D9E709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5CUBLSA9G4;
+				INFOPLIST_FILE = "Carpark TicketerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeoffBurns.Carpark-TicketerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Carpark Ticketer";
+			};
+			name = Debug;
+		};
+		ACEEADC81EF8B4FF00D9E709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5CUBLSA9G4;
+				INFOPLIST_FILE = "Carpark TicketerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GeoffBurns.Carpark-TicketerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Carpark Ticketer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACEEAD931EF8B4FF00D9E709 /* Build configuration list for PBXProject "Carpark Ticketer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEEADBE1EF8B4FF00D9E709 /* Debug */,
+				ACEEADBF1EF8B4FF00D9E709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACEEADC01EF8B4FF00D9E709 /* Build configuration list for PBXNativeTarget "Carpark Ticketer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEEADC11EF8B4FF00D9E709 /* Debug */,
+				ACEEADC21EF8B4FF00D9E709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACEEADC31EF8B4FF00D9E709 /* Build configuration list for PBXNativeTarget "Carpark TicketerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEEADC41EF8B4FF00D9E709 /* Debug */,
+				ACEEADC51EF8B4FF00D9E709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACEEADC61EF8B4FF00D9E709 /* Build configuration list for PBXNativeTarget "Carpark TicketerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEEADC71EF8B4FF00D9E709 /* Debug */,
+				ACEEADC81EF8B4FF00D9E709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACEEAD901EF8B4FF00D9E709 /* Project object */;
+}
