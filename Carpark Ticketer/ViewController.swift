@@ -10,6 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var StartDatePicker: UIDatePicker!
+    @IBOutlet weak var EndDatePicker: UIDatePicker!
+    @IBOutlet weak var PriceLabel: UILabel!
+    @IBAction func StartDateEntered(_ sender: UIDatePicker) {
+        
+        onDatesChanged()
+     
+    }
+
+    @IBAction func EndDateEntered(_ sender: UIDatePicker) {
+        onDatesChanged()
+    }
+    
+    func onDatesChanged() {
+        
+        let startDate = StartDatePicker.date
+        let endDate = EndDatePicker.date
+        
+
+        
+        PriceLabel.text = RateSelectingCalculator.sharedInstance.priceText(from: startDate, to: endDate)
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

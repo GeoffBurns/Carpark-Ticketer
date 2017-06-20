@@ -12,8 +12,16 @@
 		ACEEADA11EF8B4FF00D9E709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEAD9F1EF8B4FF00D9E709 /* Main.storyboard */; };
 		ACEEADA31EF8B4FF00D9E709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEEADA21EF8B4FF00D9E709 /* Assets.xcassets */; };
 		ACEEADA61EF8B4FF00D9E709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEEADA41EF8B4FF00D9E709 /* LaunchScreen.storyboard */; };
-		ACEEADB11EF8B4FF00D9E709 /* Carpark_TicketerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADB01EF8B4FF00D9E709 /* Carpark_TicketerTests.swift */; };
 		ACEEADBC1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */; };
+		ACEEADCA1EF8CD1200D9E709 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADC91EF8CD1200D9E709 /* PriceCalculator.swift */; };
+		ACEEADCC1EF8E76B00D9E709 /* DateExtentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADCB1EF8E76B00D9E709 /* DateExtentionTests.swift */; };
+		ACEEADCE1EF8F4B500D9E709 /* EarlyBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADCD1EF8F4B500D9E709 /* EarlyBirdTests.swift */; };
+		ACEEADD01EF8FDF200D9E709 /* NightRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADCF1EF8FDF200D9E709 /* NightRateTests.swift */; };
+		ACEEADD21EF9255D00D9E709 /* DateExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADD11EF9255D00D9E709 /* DateExtentions.swift */; };
+		ACEEADD41EF927C600D9E709 /* RateSelectingCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADD31EF927C600D9E709 /* RateSelectingCalculatorTests.swift */; };
+		ACEEADD61EF9292400D9E709 /* WeekendRateCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADD51EF9292400D9E709 /* WeekendRateCalculatorTests.swift */; };
+		ACEEADD81EF92F0B00D9E709 /* HourlyRateCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADD71EF92F0B00D9E709 /* HourlyRateCalculatorTests.swift */; };
+		ACEEADDA1EF934CC00D9E709 /* DailyRateCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEEADD91EF934CC00D9E709 /* DailyRateCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +50,19 @@
 		ACEEADA51EF8B4FF00D9E709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACEEADA71EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEEADAC1EF8B4FF00D9E709 /* Carpark TicketerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carpark TicketerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACEEADB01EF8B4FF00D9E709 /* Carpark_TicketerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpark_TicketerTests.swift; sourceTree = "<group>"; };
 		ACEEADB21EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEEADB71EF8B4FF00D9E709 /* Carpark TicketerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carpark TicketerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEEADBB1EF8B4FF00D9E709 /* Carpark_TicketerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carpark_TicketerUITests.swift; sourceTree = "<group>"; };
 		ACEEADBD1EF8B4FF00D9E709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEEADC91EF8CD1200D9E709 /* PriceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
+		ACEEADCB1EF8E76B00D9E709 /* DateExtentionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtentionTests.swift; sourceTree = "<group>"; };
+		ACEEADCD1EF8F4B500D9E709 /* EarlyBirdTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarlyBirdTests.swift; sourceTree = "<group>"; };
+		ACEEADCF1EF8FDF200D9E709 /* NightRateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightRateTests.swift; sourceTree = "<group>"; };
+		ACEEADD11EF9255D00D9E709 /* DateExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtentions.swift; sourceTree = "<group>"; };
+		ACEEADD31EF927C600D9E709 /* RateSelectingCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateSelectingCalculatorTests.swift; sourceTree = "<group>"; };
+		ACEEADD51EF9292400D9E709 /* WeekendRateCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekendRateCalculatorTests.swift; sourceTree = "<group>"; };
+		ACEEADD71EF92F0B00D9E709 /* HourlyRateCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyRateCalculatorTests.swift; sourceTree = "<group>"; };
+		ACEEADD91EF934CC00D9E709 /* DailyRateCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyRateCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,8 @@
 				ACEEADA21EF8B4FF00D9E709 /* Assets.xcassets */,
 				ACEEADA41EF8B4FF00D9E709 /* LaunchScreen.storyboard */,
 				ACEEADA71EF8B4FF00D9E709 /* Info.plist */,
+				ACEEADC91EF8CD1200D9E709 /* PriceCalculator.swift */,
+				ACEEADD11EF9255D00D9E709 /* DateExtentions.swift */,
 			);
 			path = "Carpark Ticketer";
 			sourceTree = "<group>";
@@ -110,8 +128,14 @@
 		ACEEADAF1EF8B4FF00D9E709 /* Carpark TicketerTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACEEADB01EF8B4FF00D9E709 /* Carpark_TicketerTests.swift */,
 				ACEEADB21EF8B4FF00D9E709 /* Info.plist */,
+				ACEEADCB1EF8E76B00D9E709 /* DateExtentionTests.swift */,
+				ACEEADCD1EF8F4B500D9E709 /* EarlyBirdTests.swift */,
+				ACEEADCF1EF8FDF200D9E709 /* NightRateTests.swift */,
+				ACEEADD31EF927C600D9E709 /* RateSelectingCalculatorTests.swift */,
+				ACEEADD51EF9292400D9E709 /* WeekendRateCalculatorTests.swift */,
+				ACEEADD71EF92F0B00D9E709 /* HourlyRateCalculatorTests.swift */,
+				ACEEADD91EF934CC00D9E709 /* DailyRateCalculatorTests.swift */,
 			);
 			path = "Carpark TicketerTests";
 			sourceTree = "<group>";
@@ -262,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEEADCA1EF8CD1200D9E709 /* PriceCalculator.swift in Sources */,
 				ACEEAD9E1EF8B4FF00D9E709 /* ViewController.swift in Sources */,
+				ACEEADD21EF9255D00D9E709 /* DateExtentions.swift in Sources */,
 				ACEEAD9C1EF8B4FF00D9E709 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEEADB11EF8B4FF00D9E709 /* Carpark_TicketerTests.swift in Sources */,
+				ACEEADD01EF8FDF200D9E709 /* NightRateTests.swift in Sources */,
+				ACEEADDA1EF934CC00D9E709 /* DailyRateCalculatorTests.swift in Sources */,
+				ACEEADD41EF927C600D9E709 /* RateSelectingCalculatorTests.swift in Sources */,
+				ACEEADCE1EF8F4B500D9E709 /* EarlyBirdTests.swift in Sources */,
+				ACEEADD61EF9292400D9E709 /* WeekendRateCalculatorTests.swift in Sources */,
+				ACEEADD81EF92F0B00D9E709 /* HourlyRateCalculatorTests.swift in Sources */,
+				ACEEADCC1EF8E76B00D9E709 /* DateExtentionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
