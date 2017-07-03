@@ -50,7 +50,7 @@ extension Date
     }
     public func isSameDay(as rhs:Date) -> Bool
     {
-        return self.year == rhs.year && self.month == rhs.month && self.day == rhs.day
+        return Calendar.current.isDate(rhs, inSameDayAs: self)
     }
     public var followingDay : Date
     {

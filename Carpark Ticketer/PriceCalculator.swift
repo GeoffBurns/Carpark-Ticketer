@@ -25,7 +25,7 @@ open class RateSelectingCalculator
 {
     // Singleton Pattern
     open static let sharedInstance = RateSelectingCalculator()
-    fileprivate init() { }
+    private init() { }
     
     let calculators : [PriceCalculatorStrategy]   = [
     EarlyBirdCalculator.sharedInstance,
@@ -102,7 +102,7 @@ open class EarlyBirdCalculator : PriceCalculatorStrategy
     
     // Singleton Pattern
     open static let sharedInstance = EarlyBirdCalculator()
-    fileprivate init() { }
+    private init() { }
     
     public func price(from start: Date, to end: Date) -> Double? {
         
@@ -132,7 +132,7 @@ open class NightRateCalculator : PriceCalculatorStrategy
     {
         // Singleton Pattern
         open static let sharedInstance = NightRateCalculator()
-        fileprivate init() { }
+        private init() { }
         
         public func price(from start: Date, to end: Date) -> Double? {
             
@@ -166,7 +166,7 @@ open class WeekendRateCalculator : PriceCalculatorStrategy
     {
         // Singleton Pattern
         open static let sharedInstance = WeekendRateCalculator()
-        fileprivate init() { }
+        private init() { }
         
         public func price(from start: Date, to end: Date) -> Double? {
             
@@ -197,7 +197,7 @@ open class HourlyRateCalculator : PriceCalculatorStrategy
         {
             // Singleton Pattern
             open static let sharedInstance = HourlyRateCalculator()
-            fileprivate init() { }
+            private init() { }
             
             public func price(from start: Date, to end: Date) -> Double? {
                 
@@ -231,7 +231,7 @@ open class DailyRateCalculator : PriceCalculatorStrategy
         {
            // Singleton Pattern
             open static let sharedInstance = DailyRateCalculator()
-            fileprivate init() { }
+            private init() { }
             
             public func price(from start: Date, to end: Date) -> Double? {
                 
