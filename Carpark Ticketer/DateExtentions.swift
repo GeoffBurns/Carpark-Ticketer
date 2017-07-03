@@ -42,8 +42,7 @@ extension Date
     }
     public var isWeekend : Bool
     {
-        let weekday = self.weekday
-        return weekday == 1 || weekday == 7
+       return Calendar.current.isDateInWeekend(self)
     }
     public var isNotWeekend : Bool
     {
